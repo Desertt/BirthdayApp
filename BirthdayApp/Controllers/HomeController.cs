@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BirthdayApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +18,27 @@ namespace BirthdayApp.Controllers
         public ActionResult DavetiyeFormu()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult DavetiyeFormu(DavetiyeModel model)
+        {
+
+            if (ModelState.IsValid)
+            {
+                Veritabani.Add(model);
+                return View("Thanks", model);
+            }
+
+            return View(model);
+
+        }
+
+        public ActionResult Katilanlar()
+        {
+            var Katilanlari = Veritabani.Liste.Where(i => i.KatilmaDurumu == true);
+
+            return PartialView(Katilanlari);
         }
 
     }
