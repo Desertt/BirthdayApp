@@ -12,17 +12,17 @@ namespace BirthdayApp.Models
         {
 
             _liste = new Dictionary<string, DavetiyeModel>();
-            _liste.Add("Mustafa", new DavetiyeModel
-            {
-                Ad = "Mustafa",
-                Eposta = "mustafa@gmail.com",
-                KatilmaDurumu = true
-            });
-
             _liste.Add("Merve", new DavetiyeModel
             {
                 Ad = "Merve",
                 Eposta = "merve@gmail.com",
+                KatilmaDurumu = true
+            });
+
+            _liste.Add("Mustafa", new DavetiyeModel
+            {
+                Ad = "Mustafa",
+                Eposta = "mustafa@gmail.com",
                 KatilmaDurumu = true
             });
 
