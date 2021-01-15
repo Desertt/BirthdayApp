@@ -14,21 +14,21 @@ namespace BirthdayApp.Models
             _liste = new Dictionary<string, DavetiyeModel>();
             _liste.Add("Merve", new DavetiyeModel
             {
-                Ad = "Merve",
+                Ad = "Hayatının Her Döneminde Mutlu ve Sağlıklı Olmanı Diliyorum",
                 Eposta = "merve@gmail.com",
                 KatilmaDurumu = true
             });
 
             _liste.Add("Mustafa", new DavetiyeModel
             {
-                Ad = "Mustafa",
+                Ad = "O güzel gözlerin asla hüzünlenmesin.",
                 Eposta = "mustafa@gmail.com",
                 KatilmaDurumu = true
             });
 
             _liste.Add("Miraç", new DavetiyeModel
             {
-                Ad = "Miraç",
+                Ad = "Bütün Hayallerin Gerçekleşsin,Hayat Güneşi Her Daim Seni Aydınlatsın :)",
                 Eposta = "mirac@gmail.com",
                 KatilmaDurumu = true
             });

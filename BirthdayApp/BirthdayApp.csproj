@@ -101,6 +101,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\background.css" />
+    <Content Include="Content\gifstyle.css" />
+    <Content Include="Content\image\0046.gif" />
+    <Content Include="Content\image\ClipartKey_1289382.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

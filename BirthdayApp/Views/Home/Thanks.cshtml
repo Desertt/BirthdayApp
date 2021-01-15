@@ -4,13 +4,18 @@
     ViewBag.Title = "Teşekkür Ederim";
 }
 
-<h1>Teşekkürler,@Model.Ad!</h1>
+<h1 style="font-family:'Trebuchet MS';font-size:x-large;font-style:italic;text-align:center;">Teşekkürler,@Model.Ad!</h1>
+<body>
+    <link href="~/Content/background.css" rel="stylesheet" />
+</body>
+<img src="~/Content/image/0046.gif" align="right">
 
-<div class="lead">
-    @if (Model.KatilmaDurumu==true)
+<div class="text-center" style="font-family:'Trebuchet MS';font-size:x-large;text-align:right">
+    @if (Model.KatilmaDurumu == true)
     {
-        @:Gelmene çok sevindim: ) Bütün Hazırlıklar tamamlandı..!
-        @Html.Action("Katilanlar","Home")
+        @:İyiki Doğdun,İyiki Varsın :) Doğum Günün Kutlu Olsun !
+        @*@:Gelmene çok sevindim: ) Bütün Hazırlıklar tamamlandı..!*@
+        @Html.Action("Katilanlar", "Home")
     }
     else
     {
